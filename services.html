@@ -9,18 +9,23 @@
     <script src="https://kit.fontawesome.com/1c6146409b.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-[#F9F9F8]">
+<body class="bg-[#F9F9F8] text-gray-900">
 
     <!-- Header -->
-    <header class="bg-[#0A1A4B] py-4 px-6 flex justify-between items-center">
+    <header class="absolute top-0 left-0 w-full h-22 py-4 px-6 flex justify-between items-center z-10 bg-[#0A1A4B]">
         <a href="index.html">
             <img src="resources/logo-small2-cut2.png" alt="EZVA Logo" class="max-h-20 w-auto p-2">
         </a>
-        <nav class="flex space-x-6 items-center text-lg">
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="text-white font-bold hover:text-[#FFB838] text-xl">Home</a></li>
-                <li><a href="services.html" class="text-white font-bold hover:text-[#FFB838] text-xl">Services</a></li>
-                <li><a href="aboutUs.html" class="text-white font-bold hover:text-[#FFB838] text-xl">About Us</a></li>
+        <!-- Botón de Menú Hamburguesa -->
+        <button id="menu-toggle" class="text-white text-3xl md:hidden">
+            <i class="fas fa-bars"></i>
+        </button>
+        <!-- Menú de Escritorio -->
+        <nav class="hidden md:flex space-x-6 items-center text-lg">
+            <ul class="flex space-x-6 text-white font-bold text-xl">
+                <li><a href="index.html" class="hover:text-[#FFB838]">Home</a></li>
+                <li><a href="services.html" class="hover:text-[#FFB838]">Services</a></li>
+                <li><a href="aboutUs.html" class="hover:text-[#FFB838]">About Us</a></li>
             </ul>
             <a href="calendar.html"
                 class="border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-[#FFB838] transition text-xl">
@@ -29,8 +34,25 @@
         </nav>
     </header>
 
+    <!-- Menú Móvil Mejorado -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-[#0A1A4B] bg-opacity-90 backdrop-blur-lg flex flex-col items-center justify-center space-y-8 text-white text-2xl font-semibold transform translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <button id="close-menu"
+            class="absolute top-6 right-6 text-white text-3xl hover:text-[#FFB838] transition-colors">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="text-center space-y-6">
+            <li><a href="index.html" class="hover:text-[#FFB838] transition-colors duration-200">Home</a></li>
+            <li><a href="services.html" class="hover:text-[#FFB838] transition-colors duration-200">Services</a></li>
+            <li><a href="aboutUs.html" class="hover:text-[#FFB838] transition-colors duration-200">About Us</a></li>
+            <li><a href="calendar.html"
+                    class="bg-[#FFB838] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#e6a02e] transition-all">Schedule
+                    a Meeting</a></li>
+        </ul>
+    </div>
+
     <!-- Services Section -->
-    <section class="py-16 px-6 bg-white text-center">
+    <section class="pt-40 py-16 px-6 bg-white text-center">
         <h1 class="text-5xl font-bold text-[#FFB838] mb-6">Our Services</h1>
         <p class="text-[#918D89] max-w-2xl mx-auto mb-12">At EZVA Global, we provide high-quality virtual assistance
             solutions to help your business grow and thrive. Explore our core services below.</p>
@@ -161,6 +183,16 @@
             <p>&copy; 2025 EZVA Global. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.remove("translate-x-full");
+        });
+
+        document.getElementById("close-menu").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.add("translate-x-full");
+        });
+    </script>
 
 </body>
 
