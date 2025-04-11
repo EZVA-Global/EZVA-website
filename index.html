@@ -47,6 +47,7 @@
             <li><a href="index.html" class="hover:text-[#FFB838] transition-colors duration-200">Home</a></li>
             <li><a href="services.html" class="hover:text-[#FFB838] transition-colors duration-200">Services</a></li>
             <li><a href="aboutUs.html" class="hover:text-[#FFB838] transition-colors duration-200">About Us</a></li>
+            <li><a href="workWithUs.html" class="hover:text-[#FFB838]">About Us</a></li>
             <li><a href="calendar.html"
                     class="bg-[#FFB838] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#e6a02e] transition-all">Schedule
                     a Meeting</a></li>
@@ -143,7 +144,7 @@
         </div>
     </section>
 
-    <!-- Sección Goodness (más cerca ahora) -->
+    <!--Pain point-->
     <section
         class="bg-[#B0BAD5] text-white py-8 px-6 rounded-2xl mx-10 mt-0 flex flex-col md:flex-row items-center justify-between">
         <div class="md:max-w-3xl">
@@ -152,15 +153,15 @@
                 projects, part-time assistance, or full-time help, our flexible solutions are designed to adapt to your
                 unique requirements.</p>
         </div>
-        <div class="mt-4 md:mt-0 md:ml-4"> <!-- Ajusté el mt-6 a mt-4 y el ml-2 a ml-4 -->
+        <div class="mt-4 md:mt-0 md:ml-4">
             <a href="calendar.html"
                 class="inline-block bg-[#0A1A4B] hover:bg-[#319795] text-white text-2xl font-bold py-4 px-14 rounded-lg transition">CLICK
                 TO SOLVE IT</a>
         </div>
     </section>
 
-    <!-- Sección final con imagen -->
-    <section class="py-20 px-10 flex flex-col md:flex-row items-center">
+    <!--Ready to escale-->
+    <section class="pt-20 pb-8 px-10 flex flex-col md:flex-row items-center">
         <div class="md:w-1/2">
             <img src="resources/flexible.webp" alt="EZVA Service" class="w-full rounded-lg shadow-lg -ml-10 md:-ml-20">
         </div>
@@ -170,6 +171,30 @@
             <p class="mt-4 text-lg text-[#918D89]">Our team of virtual assistants helps you streamline your operations,
                 increase efficiency, and stay ahead in your industry. From administrative support to digital marketing,
                 we've got you covered.</p>
+        </div>
+    </section>
+
+    <!--Work With Us -->
+    <section class="bg-transparent pt-8 pb-8 px-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-[#0A1A4B]">Want to work with us?</h2>
+                <h3 class="text-5xl font-bold text-[#FFB838] mt-2">Join the EZVA Team</h3>
+                <p class="mt-4 text-lg text-[#918D89]">
+                    Are you a skilled virtual assistant looking to join a professional, dynamic, and growing team?
+                    EZVA Global is always on the lookout for passionate individuals who are ready to make a difference.
+                </p>
+                <a href="workWithUs.html"
+                    class="inline-block bg-[#FFB838] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#D5C1A6] transition mt-4">
+                    APPLY NOW
+                </a>
+            </div>
+
+            <div class="md:-mr-32">
+                <img src="resources/virtual-assistant-home.jpg" alt="Work with us"
+                    class="rounded-xl shadow-lg w-full object-cover">
+            </div>
+
         </div>
     </section>
 
@@ -240,9 +265,10 @@
             <div class="text-center md:text-left">
                 <h3 class="text-xl font-bold mb-4 text-[#FFB838]">Quick Links</h3>
                 <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-[#FFB838]">Home</a></li>
-                    <li><a href="#" class="hover:text-[#FFB838]">Services</a></li>
-                    <li><a href="#" class="hover:text-[#FFB838]">About Us</a></li>
+                    <li><a href="index.html" class="hover:text-[#FFB838]">Home</a></li>
+                    <li><a href="services.html" class="hover:text-[#FFB838]">Services</a></li>
+                    <li><a href="aboutUs.html" class="hover:text-[#FFB838]">About Us</a></li>
+                    <li><a href="workWithUs.html" class="hover:text-[#FFB838]">Work with Us</a></li>
                     <li><a href="calendar.html" class="hover:text-[#FFB838]">Schedule a Meeting</a></li>
                 </ul>
             </div>
@@ -251,16 +277,13 @@
             <div class="text-center md:text-left">
                 <h3 class="text-xl font-bold mb-4 text-[#FFB838]">Follow Us</h3>
                 <div class="flex justify-center md:justify-start space-x-6">
-                    <a href="#" class="text-white text-2xl hover:text-[#FFB838]">
+                    <a href="https://www.facebook.com/people/EZVA/61568151145695/" class="text-white text-2xl hover:text-[#FFB838]">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="#" class="text-white text-2xl hover:text-[#FFB838]">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="text-white text-2xl hover:text-[#FFB838]">
+                    <a href="https://www.linkedin.com/company/ez-va-global/" class="text-white text-2xl hover:text-[#FFB838]">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="#" class="text-white text-2xl hover:text-[#FFB838]">
+                    <a href="https://www.instagram.com/ezvaglobal/" class="text-white text-2xl hover:text-[#FFB838]">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
@@ -279,12 +302,12 @@
             const hamburger = document.getElementById("hamburger");
             const mobileMenu = document.getElementById("mobile-menu");
             const closeMenu = document.getElementById("close-menu");
-    
+
             hamburger.addEventListener("click", function () {
                 mobileMenu.classList.remove("translate-x-full");
                 mobileMenu.classList.add("translate-x-0");
             });
-    
+
             closeMenu.addEventListener("click", function () {
                 mobileMenu.classList.remove("translate-x-0");
                 mobileMenu.classList.add("translate-x-full");

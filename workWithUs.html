@@ -2,33 +2,27 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EZVA Global - Schedule a Meeting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EZVA Global - Work With Us</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/1c6146409b.js" crossorigin="anonymous"></script>
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 </head>
 
-<body class="bg-[#F9F9F8]">
-
+<body class="bg-[#F9F9F8] text-gray-900">
     <!-- Header -->
-    <header class="absolute top-0 left-0 w-full h-22 py-4 px-6 flex justify-between items-center z-10 bg-[#0A1A4B]">
+    <header class="absolute top-0 left-0 w-full py-4 px-6 flex justify-between items-center z-10 bg-transparent">
         <a href="index.html">
-            <img src="resources/logo-small2-cut2.png" alt="EZVA Logo" class="max-h-20 w-auto p-2">
+            <img src="resources/logo-small2-cut2.png" alt="EZVA Logo" class="max-h-20 w-auto p-2" />
         </a>
-        <!-- Botón de Menú Hamburguesa -->
         <button id="menu-toggle" class="text-white text-3xl md:hidden">
             <i class="fas fa-bars"></i>
         </button>
-        <!-- Menú de Escritorio -->
         <nav class="hidden md:flex space-x-6 items-center text-lg">
             <ul class="flex space-x-6 text-white font-bold text-xl">
                 <li><a href="index.html" class="hover:text-[#FFB838]">Home</a></li>
                 <li><a href="services.html" class="hover:text-[#FFB838]">Services</a></li>
                 <li><a href="aboutUs.html" class="hover:text-[#FFB838]">About Us</a></li>
-                <li><a href="workWithUs.html" class="hover:text-[#FFB838]">About Us</a></li>
             </ul>
             <a href="calendar.html"
                 class="border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-[#FFB838] transition text-xl">
@@ -37,7 +31,7 @@
         </nav>
     </header>
 
-    <!-- Menú Móvil Mejorado -->
+    <!-- Menú Móvil -->
     <div id="mobile-menu"
         class="fixed inset-0 bg-[#0A1A4B] bg-opacity-90 backdrop-blur-lg flex flex-col items-center justify-center space-y-8 text-white text-2xl font-semibold transform translate-x-full transition-transform duration-300 ease-in-out z-50">
         <button id="close-menu"
@@ -45,51 +39,54 @@
             <i class="fas fa-times"></i>
         </button>
         <ul class="text-center space-y-6">
-            <li><a href="index.html" class="hover:text-[#FFB838] transition-colors duration-200">Home</a></li>
-            <li><a href="services.html" class="hover:text-[#FFB838] transition-colors duration-200">Services</a></li>
-            <li><a href="aboutUs.html" class="hover:text-[#FFB838] transition-colors duration-200">About Us</a></li>
+            <li><a href="index.html" class="hover:text-[#FFB838]">Home</a></li>
+            <li><a href="services.html" class="hover:text-[#FFB838]">Services</a></li>
+            <li><a href="aboutUs.html" class="hover:text-[#FFB838]">About Us</a></li>
+            <li><a href="workWithUs.html" class="hover:text-[#FFB838]">About Us</a></li>
             <li><a href="calendar.html"
                     class="bg-[#FFB838] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#e6a02e] transition-all">Schedule
                     a Meeting</a></li>
         </ul>
     </div>
 
-    <!-- Title Section -->
-    <section class="pt-40 py-16 px-6 bg-white text-center">
-        <h1 class="text-4xl font-bold text-[#FFB838]">Let’s Book Your Meeting!</h1>
-        <p class="text-base mt-3 text-[#918D89]">Choose the time that works best for you and connect with our EZVA
-            specialists.</p>
+    <!-- Título de Página -->
+    <section class="relative h-[400px] flex items-center justify-center text-center text-white px-10"
+        style="background-image: url('resources/main-bg.png'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative max-w-3xl">
+            <h1 class="text-5xl font-bold">Work With Us</h1>
+            <p class="mt-4 text-2xl italic opacity-90">Join our team and grow with EZVA Global</p>
+        </div>
     </section>
 
-    <!-- Calendly Embed -->
-    <section class="max-w-5xl mx-auto px-4 py-10">
-        <div class="rounded-xl shadow-lg border border-gray-200 overflow-hidden">
-            <div id="calendly-inline-widget" class="w-full h-[1000px] sm:h-[1100px] lg:h-[1100px]"></div>
-            <script type="text/javascript">
-                Calendly.initInlineWidget({
-                    url: 'https://calendly.com/toreye/30-minute-meeting',
-                    parentElement: document.getElementById('calendly-inline-widget'),
-                    prefill: {},
-                    utm: {}
-                });
-            </script>
+    <!-- Microsoft Forms Embed -->
+    <section class="py-20 px-6 max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-[#0A1A4B] mb-8">Apply Here</h2>
+        <div class="w-full h-[900px]">
+            <iframe 
+                src="https://forms.office.com/Pages/ResponsePage.aspx?id=2pW_ZmUnwEmJEyb7uOI_AYhnYM81Tt1Ep8oCB1Luwl5UMUVONlFJSFVXS0Y3MjdHMU40VEJIUUxHSi4u&embed=true" 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                Loading…
+            </iframe>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#0A1A4B] text-white py-12 px-6 mt-20">
+    <footer class="bg-[#0A1A4B] text-white py-12 px-6">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
-            <!-- Logo and Contact Info -->
             <div class="text-center md:text-left">
                 <a href="index.html" class="block mb-4">
-                    <img src="resources/logo-small2-cut2.png" alt="EZVA Logo" class="max-h-20 w-auto">
+                    <img src="resources/logo-small2-cut2.png" alt="EZVA Logo" class="max-h-20 w-auto" />
                 </a>
                 <p class="text-[#D5C1A6]">EZVA Global LLC</p>
                 <p class="text-[#D5C1A6]">Elevating Your Business with Top-Tier Virtual Assistance</p>
                 <p class="mt-4 text-[#D5C1A6]">Contact us: info@ezvaglobal.com</p>
             </div>
 
-            <!-- Quick Links -->
             <div class="text-center md:text-left">
                 <h3 class="text-xl font-bold mb-4 text-[#FFB838]">Quick Links</h3>
                 <ul class="space-y-2">
@@ -101,7 +98,6 @@
                 </ul>
             </div>
 
-            <!-- Social Media -->
             <div class="text-center md:text-left">
                 <h3 class="text-xl font-bold mb-4 text-[#FFB838]">Follow Us</h3>
                 <div class="flex justify-center md:justify-start space-x-6">
@@ -134,7 +130,6 @@
             document.getElementById("mobile-menu").classList.add("translate-x-full");
         });
     </script>
-
 </body>
 
 </html>
