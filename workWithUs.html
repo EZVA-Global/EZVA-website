@@ -124,6 +124,29 @@
     </footer>
 
     <script>
+        function showSecurityMessage() {
+            alert("This action is disabled for security reasons.");
+        }
+    
+        //Right click disabled
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+            showSecurityMessage();
+        });
+    
+        //Key combination disabled
+        document.onkeydown = function(e) {
+            if (
+                e.key === "F12" ||
+                (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
+                (e.ctrlKey && e.key === "u")
+            ) {
+                e.preventDefault();
+                showSecurityMessage();
+                return false;
+            }
+        };
+        
         document.getElementById("menu-toggle").addEventListener("click", function () {
             document.getElementById("mobile-menu").classList.remove("translate-x-full");
         });

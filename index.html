@@ -302,17 +302,25 @@
 
 
     <script>
-        // Bloquear clic derecho
+        function showSecurityMessage() {
+            alert("This action is disabled for security reasons.");
+        }
+
+        //Right click disabled
         document.addEventListener("contextmenu", function (e) {
             e.preventDefault();
+            showSecurityMessage();
         });
 
-        // Bloquear F12 y Ctrl+Shift+I
+        //Key combination disabled
         document.onkeydown = function (e) {
             if (
                 e.key === "F12" ||
-                (e.ctrlKey && e.shiftKey && e.key === "I")
+                (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
+                (e.ctrlKey && e.key === "u")
             ) {
+                e.preventDefault();
+                showSecurityMessage();
                 return false;
             }
         };
