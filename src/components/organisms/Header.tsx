@@ -19,9 +19,11 @@ const Header: React.FC = () => {
 
   const navigationItems = [
     { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-    { label: 'About', href: '/about' },
-    { label: 'Contact', href: '/#contact' },
+    { label: 'Services', href: '/#services' },
+    { label: 'About', href: '/#about' },
+    { label: 'Contact', 
+      href: 'mailto:universal@ezvaglobal.com?subject=Inquiry about EZVA Global Services&body=Hello EZVA Global,%0D%0A%0D%0AI am interested in learning more about your virtual assistant services. Could you please provide additional information about:%0D%0A%0D%0A- [Please specify services of interest]%0D%0A%0D%0AThank you for your time, looking forward to hearing from you.%0D%0A%0D%0ABest regards,%0D%0A[Your Name]' 
+    },
   ];
 
   return (
@@ -57,7 +59,7 @@ const Header: React.FC = () => {
             <Button 
               variant={isScrolled ? 'cta' : 'outline-light'}
               size="lg"
-              onClick={() => window.location.href = '/booking'}
+              onClick={() => window.location.href = '/#booking'}
             >
               Schedule a Meeting
             </Button>

@@ -62,7 +62,7 @@ const AboutWhyChoose: React.FC = () => {
           
           {/* Meet Our Team CTA */}
           <div className="text-center mt-12">
-            <a href="/our-team">
+            <a href="/#our-team">
               <Button 
                 variant="hero" 
                 size="lg"

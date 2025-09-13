@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: 'ezvaglobal/',
+  base: '/',
   plugins: [
     react(),
     mode === 'development' &&

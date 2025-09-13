@@ -56,7 +56,7 @@ const WorkWithUsSection: React.FC = () => {
               </div>
             </div>
             
-            <a href="/work-with-us">
+            <a href="/#work-with-us">
               <Button variant="hero" size="lg" className="text-lg px-8 py-4">
                 Apply Now
               </Button>

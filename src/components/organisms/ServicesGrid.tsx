@@ -27,7 +27,7 @@ const ServicesGrid: React.FC = () => {
       title: "Digital Marketing Support",
       description: "Boost your marketing efforts with services like email campaign management, pay-per-click (PPC) ad support, keyword research, SEO optimization, and analytics reporting. We help you attract and convert leads effectively.",
       buttonText: "Get Started",
-      href: "/digital-marketing"
+      href: "/#digital-marketing"
     },
     {
       icon: <HelpCircle />,
