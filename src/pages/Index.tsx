@@ -6,6 +6,7 @@ import PainPointSection from '@/components/organisms/PainPointSection';
 import ReadyToScaleSection from '@/components/organisms/ReadyToScaleSection';
 import WorkWithUsSection from '@/components/organisms/WorkWithUsSection';
 import FAQSection from '@/components/organisms/FAQSection';
+import StorePromoSection from '@/components/organisms/StorePromoSection';
 
 const Index: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Index: React.FC = () => {
       <Hero />
       <ServicesSection />
       <PainPointSection />
+      <StorePromoSection />
       <ReadyToScaleSection />
       <WorkWithUsSection />
       <FAQSection />
