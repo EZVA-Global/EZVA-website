@@ -13,7 +13,7 @@ const BookingCalendar: React.FC = () => {
       // Initialize Calendly widget
       if (window.Calendly) {
         window.Calendly.initInlineWidget({
-          url: 'https://calendly.com/toreye/30-minute-meeting',
+          url: 'https://calendly.com/toreye/discovery-meeting',
           parentElement: document.getElementById('calendly-inline-widget'),
           prefill: {},
           utm: {}
