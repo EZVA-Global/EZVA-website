@@ -86,10 +86,10 @@ const Footer: React.FC = () => {
               © 2025 EZVA Global. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="/privacy-policy" className="text-primary-foreground/60 hover:text-accent transition-colors">
+              <a href="/#privacy-policy" className="text-primary-foreground/60 hover:text-accent transition-colors">
                 Privacy Policy
               </a>
-              <a href="/terms-of-service" className="text-primary-foreground/60 hover:text-accent transition-colors">
+              <a href="/#terms-of-service" className="text-primary-foreground/60 hover:text-accent transition-colors">
                 Terms of Service
               </a>
               <a href="#" className="text-primary-foreground/60 hover:text-accent transition-colors">
