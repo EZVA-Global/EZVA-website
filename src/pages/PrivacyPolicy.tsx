@@ -72,7 +72,7 @@ const PrivacyPolicy: React.FC = () => {
                                 <li><strong>Opt-Out:</strong> You can opt out of SMS communications at any time by replying <strong>STOP</strong> to any message you receive from us. After opting out, you will receive a confirmation message and no further SMS messages will be sent unless you opt back in.</li>
                                 <li><strong>Help:</strong> Reply <strong>HELP</strong> to any SMS message for assistance, or contact us at universal@ezvaglobal.com.</li>
                                 <li><strong>Carriers:</strong> Carriers are not liable for delayed or undelivered messages.</li>
-                                <li><strong>No Sharing for Marketing:</strong> Mobile phone numbers and SMS opt-in data are <strong>not shared with third parties or affiliates for marketing purposes</strong>.</li>
+                                <li><strong>No Sharing for Marketing:</strong> Mobile information, including phone numbers, SMS opt-in data, and consent records, <strong>will not be shared, sold, rented, or disclosed to third parties or affiliates for marketing or promotional purposes.</strong> This information may only be shared with service providers necessary to deliver our services, comply with legal obligations, or protect our rights.</li>
                             </ul>
                         </div>
 

@@ -64,20 +64,36 @@ const TermsOfService: React.FC = () => {
                                 By providing your contact information, you consent to receive communications from EZVA Global by email,
                                 phone, and SMS related to our services, your account, appointments, and follow-ups.
                             </p>
+
                             <h3 className="text-xl font-semibold text-primary mt-4 mb-2">SMS Communication Terms</h3>
+
+                            <p className="mb-3">
+                                By opting in to receive SMS messages from EZVA Global, you agree to receive transactional and/or
+                                promotional text messages related to our services, appointments, account activity, and business
+                                communications.
+                            </p>
+
                             <ul className="list-disc pl-6 space-y-2">
-                                <li>Message frequency varies based on your interactions and service activity.</li>
+                                <li>Message frequency varies.</li>
                                 <li>Message and data rates may apply.</li>
-                                <li>Reply <strong>STOP</strong> at any time to opt out of SMS communications.</li>
+                                <li>Reply <strong>STOP</strong> to opt out at any time.</li>
                                 <li>Reply <strong>HELP</strong> for assistance, or contact us at universal@ezvaglobal.com.</li>
                                 <li>Carriers are not liable for delayed or undelivered messages.</li>
-                                <li>Mobile phone numbers and SMS opt-in data are not shared with third parties or affiliates for marketing purposes.</li>
+                                <li>
+                                    Mobile information, including phone numbers, SMS opt-in data, and consent records,
+                                    will not be shared, sold, rented, or disclosed to third parties or affiliates for
+                                    marketing or promotional purposes.
+                                </li>
                             </ul>
+
                             <p className="mt-2">
-                                For full details on how we handle your information, please review our{' '}
-                                <a href="/privacy-policy" className="text-accent hover:underline">Privacy Policy</a>.
+                                For more information about how we collect, use, and protect your information, please review our{' '}
+                                <a href="/privacy-policy" className="text-accent hover:underline">
+                                    Privacy Policy
+                                </a>.
                             </p>
                         </div>
+
 
                         <div>
                             <h2 className="text-2xl font-bold text-primary mb-3">4. Payment Terms</h2>
