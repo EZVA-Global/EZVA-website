@@ -51,7 +51,7 @@ const BookingConsentSection: React.FC = () => {
                                 Provide your consent to receive SMS communications from EZVA Global regarding appointments, updates, and services.
                             </p>
                             <a
-                                href="#"
+                                href="https://forms.office.com/r/e5eyeXqfi0"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center px-8 py-3 rounded-md bg-accent text-accent-foreground font-semibold shadow-soft hover:bg-accent/90 hover:shadow-hover transform hover:scale-105 transition-all duration-300"
