@@ -31,7 +31,7 @@ const BookingConsentSection: React.FC = () => {
                                 Book a complimentary consultation with our team to discuss how EZVA Global can support your business. During scheduling, you may optionally opt in to receive SMS communications from EZVA Global.
                             </p>
                             <a
-                                href="https://calendly.com/toreye/15-minute-meeting"
+                                href="https://calendly.com/toreye/30-minute-meeting"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center px-8 py-3 rounded-md bg-primary text-primary-foreground font-semibold shadow-soft hover:bg-primary/90 hover:shadow-hover transform hover:scale-105 transition-all duration-300"
