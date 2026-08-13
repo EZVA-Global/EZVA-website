@@ -3,6 +3,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import { Accessibility } from "react-accessibility-package";
+import AccessibilityMenuState from "@/components/organisms/AccessibilityMenuState";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
 import About from "./pages/About";
@@ -15,7 +17,6 @@ import Store from "./pages/Store";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -23,22 +24,25 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/booking" element={<Booking />} />
-          <Route path="/digital-marketing" element={<DigitalMarketing />} />
-          <Route path="/work-with-us" element={<WorkWithUs />} />
-          <Route path="/our-team" element={<OurTeam />} />
-          <Route path="/store" element={<Store />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </HashRouter>
+      <Accessibility lang="en" theme="mui">
+        <AccessibilityMenuState />
+        <HashRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/booking" element={<Booking />} />
+            <Route path="/digital-marketing" element={<DigitalMarketing />} />
+            <Route path="/work-with-us" element={<WorkWithUs />} />
+            <Route path="/our-team" element={<OurTeam />} />
+            <Route path="/store" element={<Store />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </HashRouter>
+      </Accessibility>
     </TooltipProvider>
   </QueryClientProvider>
 );
