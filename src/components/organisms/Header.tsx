@@ -66,7 +66,7 @@ const Header: React.FC = () => {
               variant={isScrolled ? "cta" : "outline-light"}
               size="lg"
               aria-label="Schedule a meeting with EZVA Global"
-              onClick={() => (window.location.href = "/booking")}
+              onClick={() => (window.location.href = "/#/booking")}
             >
               Schedule a Meeting
             </Button>
@@ -116,7 +116,7 @@ const Header: React.FC = () => {
                   size="lg"
                   className="w-full"
                   aria-label="Schedule a meeting with EZVA Global"
-                  onClick={() => (window.location.href = "/booking")}
+                  onClick={() => (window.location.href = "/#/booking")}
                 >
                   Schedule a Meeting
                 </Button>
