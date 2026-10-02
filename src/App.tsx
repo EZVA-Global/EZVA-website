@@ -13,6 +13,7 @@ import Booking from "./pages/Booking";
 import DigitalMarketing from "./pages/DigitalMarketing";
 import WorkWithUs from "./pages/WorkWithUs";
 import OurTeam from "./pages/OurTeam";
+import Newsletter from "./pages/Newsletter";
 import NotFound from "./pages/NotFound";
 import Store from "./pages/Store";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -55,6 +56,7 @@ const App = () => (
             <Route path="/digital-marketing" element={<DigitalMarketing />} />
             <Route path="/work-with-us" element={<WorkWithUs />} />
             <Route path="/our-team" element={<OurTeam />} />
+            <Route path="/newsletter" element={<Newsletter />} />
             <Route path="/store" element={<Store />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
