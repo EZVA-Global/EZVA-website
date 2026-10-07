@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
     { label: "About", href: "/about" },
-    { label: "FAQ", href: "/#faq" },
+    { label: "Newsletter", href: "/Newsletter" },
     { label: "Contact", href: "mailto:universal@ezvaglobal.com" },
   ];
 
@@ -109,23 +109,23 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-6 text-sm">
               <a
-                href="/#/privacy-policy"
+                href="/privacy-policy"
                 className="text-primary-foreground/60 hover:text-accent transition-colors focus-visible:underline"
               >
                 Privacy Policy
               </a>
               <a
-                href="/#/terms-of-service"
+                href="/terms-of-service"
                 className="text-primary-foreground/60 hover:text-accent transition-colors focus-visible:underline"
               >
                 Terms of Service
               </a>
-              <a
+              {/* <a
                 href="mailto:universal@ezvaglobal.com?subject=Cookie%20Policy%20Request"
                 className="text-primary-foreground/60 hover:text-accent transition-colors focus-visible:underline"
               >
                 Cookie Policy
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

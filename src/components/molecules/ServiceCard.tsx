@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 interface ServiceCardProps {
@@ -18,11 +19,19 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   href,
   onButtonClick,
 }) => {
+  const navigate = useNavigate();
+
   const handleClick = () => {
     if (href) {
-      window.location.href = href;
+      if (href.startsWith("/")) {
+        navigate(href);
+      } else {
+        window.location.href = href;
+      }
     } else if (onButtonClick) {
       onButtonClick();
+    } else {
+      navigate("/booking");
     }
   };
 

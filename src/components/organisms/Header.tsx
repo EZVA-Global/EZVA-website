@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Logo from "@/components/atoms/Logo";
 import NavigationItem from "@/components/molecules/NavigationItem";
 import { Button } from "@/components/ui/button";
 
 const Header: React.FC = () => {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -20,7 +22,7 @@ const Header: React.FC = () => {
   const navigationItems = [
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
-    { label: "Store", href: "/store" },
+    { label: "Newsletter", href: "/newsletter" },
     { label: "About", href: "/about" },
     {
       label: "Contact",
@@ -66,7 +68,7 @@ const Header: React.FC = () => {
               variant={isScrolled ? "cta" : "outline-light"}
               size="lg"
               aria-label="Schedule a meeting with EZVA Global"
-              onClick={() => (window.location.href = "/#/booking")}
+              onClick={() => navigate("/booking")}
             >
               Schedule a Meeting
             </Button>
@@ -116,7 +118,7 @@ const Header: React.FC = () => {
                   size="lg"
                   className="w-full"
                   aria-label="Schedule a meeting with EZVA Global"
-                  onClick={() => (window.location.href = "/#/booking")}
+                  onClick={() => navigate("/booking")}
                 >
                   Schedule a Meeting
                 </Button>
