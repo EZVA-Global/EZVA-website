@@ -1,5 +1,6 @@
 import React from "react";
 import { Facebook, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 import Logo from "@/components/atoms/Logo";
 
 const Footer: React.FC = () => {
@@ -7,7 +8,7 @@ const Footer: React.FC = () => {
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
     { label: "About", href: "/about" },
-    { label: "Newsletter", href: "/Newsletter" },
+    { label: "Newsletter", href: "/newsletter" },
     { label: "Contact", href: "mailto:universal@ezvaglobal.com" },
   ];
 
@@ -60,18 +61,21 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 focus-visible:underline"
-                    target={link.href.startsWith("http") ? "_blank" : undefined}
-                    rel={
-                      link.href.startsWith("http")
-                        ? "noopener noreferrer"
-                        : undefined
-                    }
-                  >
-                    {link.label}
-                  </a>
+                  {link.href.startsWith("/") ? (
+                    <Link
+                      to={link.href}
+                      className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 focus-visible:underline"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-primary-foreground/80 hover:text-accent transition-colors duration-300 focus-visible:underline"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
